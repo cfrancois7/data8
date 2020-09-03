@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+    web:
+      image: flask
+      container_name: flask_web
+      ports:
+        - "8000:5000"
+
+    machine_learning:
+        image: codait/max-text-summarizer
+        container_name: ml_summarizer
